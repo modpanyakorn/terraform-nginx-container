@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevOps Presentation</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .container {
+        text-align: center;
+        max-width: 800px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+        animation: fadeIn 2s ease-in-out;
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        animation: slideIn 1.5s ease-in-out;
+      }
+
+      p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        animation: fadeIn 2.5s ease-in-out;
+      }
+
+      .devops-cycle {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+        animation: rotate 10s linear infinite;
+      }
+
+      .devops-cycle div {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 15px;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        text-transform: uppercase;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateY(-50px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes rotate {
+        from {
+          transform: rotateX("angle");
+        }
+        to {
+          transform: rotateX(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>DevOps: The Future of Software Development</h1>
+      <p>
+        DevOps คือวัฒนธรรมและแนวปฏิบัติที่ผสมผสานระหว่าง Development (การพัฒนา)
+        และ Operations (การดำเนินการ)
+        เพื่อเพิ่มประสิทธิภาพและความเร็วในการส่งมอบซอฟต์แวร์
+        โดยใช้เครื่องมือและกระบวนการอัตโนมัติต่าง ๆ เช่น CI/CD,
+        Containerization, และ Monitoring
+      </p>
+      <div class="devops-cycle">
+        <div>Plan</div>
+        <div>Code</div>
+        <div>Build</div>
+        <div>Test</div>
+        <div>Deploy</div>
+        <div>Monitor</div>
+      </div>
+    </div>
+  </body>
+</html>
